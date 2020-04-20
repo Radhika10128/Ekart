@@ -1,0 +1,18 @@
+.text-block{
+    position:absolute;
+    top: 200px;
+    right: 500px;
+    color: black;
+    
+}
+.img-fluid{
+    max-width: 100%;
+    max-height: auto;
+}
+.input1 {
+    border-radius: 15px 50px 30px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px; 
+}
