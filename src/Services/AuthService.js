@@ -39,6 +39,17 @@ export default {
                     else
                         return { isAuthenticated : false, user : {username : "",role : ""}};
                 });
-    }
+    },
+    addWatch : watch =>{
+        // console.log(user);
+         return fetch('/watch/addWatch',{
+             method : "post",
+             body : JSON.stringify(watch),
+             headers : {
+                 'Content-Type' : 'application/json'
+             }
+         }).then(res => res.json())
+           .then(data => data);
+     }
 
 }

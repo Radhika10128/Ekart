@@ -92,7 +92,7 @@ export default class Home extends Component {
             <div class="w3-col l3 m6 w3-margin-bottom">
               <div class="w3-display-container">
                 <div class="w3-display-topleft w3-black w3-padding">Smart Watches</div>
-                <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2020/02/04/10/cheap-smart-watches-0.jpg?w968" alt="House" style={{ width: "100%" }} />
+               <Link to="watch"><img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2020/02/04/10/cheap-smart-watches-0.jpg?w968" alt="House" style={{ width: "100%" }} /></Link>
               </div>
             </div>
           </div>

@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
+var bodyparser=require('body-parser');
+app.use(bodyparser.urlencoded({extended: true}));
+app.use(bodyparser.json());
 app.use(cookieParser());
 app.use(express.json());
 
@@ -21,6 +24,13 @@ connection.once('open', () => {
 const userRouter = require('./routes/User');
 app.use('/user',userRouter);
 
+const WatchRouter = require('./routes/Watch');
+app.use('/watch',WatchRouter);
+
 app.listen(5000,()=>{
     console.log('express server started');
 });
+
+
+
+
